@@ -8,7 +8,7 @@ $hostname = "localhost"
 $username = "postgres"
 $database = "expenses"
 
-$env:PGPASSWORD = "renoblock"
+$env:PGPASSWORD = ""
 
 foreach ($script in $scripts)
 {

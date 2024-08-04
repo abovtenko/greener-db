@@ -7,6 +7,7 @@ BEGIN
 	) THEN
 		CREATE TABLE account (
 			id SERIAL PRIMARY KEY,
+			user_id INT,
 			name VARCHAR(100),
 			provider VARCHAR(100),
 			type VARCHAR(100)

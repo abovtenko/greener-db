@@ -9,7 +9,7 @@ BEGIN
 	THEN
 		CREATE TABLE transaction (
 			id SERIAL PRIMARY KEY,
-			accound_id INT,
+			account_id INT,
 			description VARCHAR(100),
 			credit NUMERIC(8, 2),
 			debit NUMERIC(8,2),

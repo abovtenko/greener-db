@@ -1,0 +1,45 @@
+TABLES
+
+    User
+
+        id pk
+        username
+        password hash
+        date created
+
+    Account
+
+        id pk
+        user id fk
+        name
+        provider
+        type
+        date created
+
+    Transaction
+
+        id pk
+        account id fk
+        description
+        credit
+        debit
+        date
+
+    Category
+
+        id pk
+        user id fk
+        category id fk
+        name
+
+    TransactionCategory
+
+        transaction id pk fk
+        category id pk fk
+
+
+RELATIONSHIPS
+
+    User 1.M Account
+    Account 1.M Transaction
+    Transaction M.M Category
